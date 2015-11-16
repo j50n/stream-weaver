@@ -35,6 +35,7 @@
 	},
 	"dependencies": {
 		"foo-baz": "~0.0",
-		"nomnom": "~1.8"
+		"nomnom": "~1.8",
+		"through2": "^2.0.0"
 	}
 }

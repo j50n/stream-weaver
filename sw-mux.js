@@ -18,8 +18,8 @@ require( "foo-baz" )( function* swMux() {
 
 	yield multiplexer(
 		inputs, process.stdout );
-} )().catch(function(err){
+} )().catch( function ( err ) {
 	"use strict";
-	console.error(err.stack);
-	process.exit(1);
-});
+	console.error( err.stack );
+	process.exit( 1 );
+} );
