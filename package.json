@@ -1,6 +1,6 @@
 {
 	"name": "stream-weaver",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Multiplex/demultiplex (mux/demux) line-delimited text streams with Node.JS.",
 	"main": "stream-weaver.js",
 	"scripts": {
