@@ -11,10 +11,16 @@ require( "foo-baz" )( function* swMux() {
 		.help( "Multiplex line delimited inputs into a single output stream." )
 		.nom();
 
-	const inputs = args._.map( function ( filePath ) {
-		return fs.createReadStream( filePath );
-	} ).concat( process.stdin );
-	//console.error( inputs );
+	const inputs = ( function () {
+		if ( args._.length > 0 ) {
+			return args._.map( function ( filePath ) {
+				return fs.createReadStream( filePath );
+			} );
+		}
+		else {
+			return [ process.stdin ];
+		}
+	} )();
 
 	yield multiplexer(
 		inputs, process.stdout );
