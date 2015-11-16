@@ -1,0 +1,40 @@
+{
+	"name": "stream-weaver",
+	"version": "0.0.0",
+	"description": "Multiplex/demultiplex (mux/demux) line-delimited text streams with Node.JS.",
+	"main": "stream-weaver.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"bin": {
+		"sw-mux": "./sw-mux.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/j50n/stream-weaver.git"
+	},
+	"keywords": [
+		"multiplex",
+		"demultiplex",
+		"stream",
+		"node",
+		"nodejs",
+		"text",
+		"line",
+		"delimited"
+	],
+	"author": "Jason Smith",
+	"license": "MIT",
+	"devDependencies": {
+		"duct-tape": "~0.0",
+		"grunt": "^0.4.5",
+		"grunt-contrib-jshint": "^0.11.3",
+		"grunt-jsbeautifier": "^0.2.10",
+		"grunt-markdox": "^1.2.1",
+		"grunt-tape": "0.0.2"
+	},
+	"dependencies": {
+		"foo-baz": "~0.0",
+		"nomnom": "~1.8"
+	}
+}
